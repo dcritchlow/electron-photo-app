@@ -1,0 +1,29 @@
+{
+  "name": "electron-photobombth",
+  "productName": "Photobombth",
+  "version": "1.0.0",
+  "description": "Photobooth app",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rimraf Photobombth-* && electron-packager . --platform=darwin,win32,linux --arch=x64 --icon=app",
+    "pack": "build --dir",
+    "dist": "build",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Darin Critchlow",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^6.3.1",
+    "electron-packager": "^7.7.0",
+    "electron-prebuilt": "^1.3.4",
+    "rimraf": "^2.5.4"
+  },
+  "build": {
+    "appId": "com.darincritchlow.photobombth",
+    "app-category-type": "public.app-category.entertainment",
+    "win": {
+      "iconUrl": ""
+    }
+  }
+}
